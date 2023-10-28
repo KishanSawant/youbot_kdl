@@ -10,6 +10,7 @@ Copyright:
 #define KDLINTERFACE_H_
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 #include <vector>
@@ -18,6 +19,7 @@ using namespace std;
 
 #include <kdl/chain.hpp>
 #include <kdl/chainfksolver.hpp>
+#include <kdl_parser/kdl_parser.hpp>
 #include <kdl/chainfksolverpos_recursive.hpp>
 #include <kdl/frames.hpp>
 #include <kdl/frames_io.hpp>
@@ -25,7 +27,8 @@ using namespace std;
 class KDLInterface{
 private:
     double d2r(double v);
-    KDL::Chain chain;
+    KDL::Chain chain_dh;
+    KDL::Chain chain_urdf;
     int nr_joints;
     KDL::Frame pos;
 
