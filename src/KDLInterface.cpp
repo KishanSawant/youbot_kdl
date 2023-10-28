@@ -17,7 +17,7 @@ KDLInterface::KDLInterface(){
 	 * code lines: 105-121. 
 	*/
 
-	nr_joints = chain.getNrOfJoints();
+	nr_joints = chain_dh.getNrOfJoints();
 
 }
 
