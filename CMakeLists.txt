@@ -12,7 +12,7 @@ include_directories(
   /usr/local/include
   /usr/include/eigen3
   ${Eigen_INCLUDE_DIRS}
-  ${Boost_INCLUDE_DIR}
+  ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
